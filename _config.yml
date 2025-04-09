@@ -1,0 +1,63 @@
+# Site settings
+title: Tale
+description: "Minimal Jekyll theme"
+baseurl: ""
+url: ""
+
+# Google Analytics
+google_analytics: UA—XXXXXXXX-X
+
+# Author
+author:
+  name: none none
+  url: https://none.com
+  email: none@gmail.com
+
+# Build settings
+markdown: kramdown
+include:
+  - _pages
+  - assets # Add this line to include the assets directory
+
+# Assets
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  # - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink: /:year-:month-:day/:title
+paginate: 5
+
+# Excludes
+exclude: [Gemfile, Gemfile.lock, tale.gemspec]
+
+# Disqus (Set to your disqus id)
+disqus: jekyll-tale
+
+# Collections
+collections:
+  books:
+    output: true
+    permalink: /books/:path/
+    defaults:
+      - scope:
+          path: ""
+          type: "books"
+        values:
+          layout: "book_toc"
+  articles:
+    output: true
+    permalink: /articles/:path/
+    defaults:
+      - scope:
+          path: ""
+          type: "articles"
+        values:
+          layout: "article"

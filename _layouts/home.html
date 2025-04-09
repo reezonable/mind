@@ -1,0 +1,126 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/custom.css" />
+  </head>
+  <body>
+    <header class="top-banner">
+      <div class="container">
+        <div class="logo">
+          <img src="/assets/images/logo.png" alt="Logo" />
+        </div>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+            <li><a href="{{ '/posts' | relative_url }}">Posts</a></li>
+            <li><a href="{{ '/tags' | relative_url }}">Tags</a></li>
+            <li><a href="{{ '/about' | relative_url }}">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container main-content">
+      <div class="card-columns">
+        <!-- Add your book and article cards here -->
+        <a href="/books/book-1" class="card-link">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">The Art of Coding</h5>
+              <p class="card-description">
+                A comprehensive guide to mastering the art of coding.
+              </p>
+              <div class="card-author">
+                <img
+                  src="/assets/images/author1.jpg"
+                  alt="Author"
+                  class="author-img"
+                />
+                <p class="author-name">By John Doe</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="/books/book-2" class="card-link">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Advanced Algorithms</h5>
+              <p class="card-description">
+                Exploring advanced algorithms for efficient problem-solving.
+              </p>
+              <div class="card-author">
+                <img
+                  src="/assets/images/author2.jpg"
+                  alt="Author"
+                  class="author-img"
+                />
+                <p class="author-name">By Jane Smith</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="/books/book-3" class="card-link">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Data Structures Unleashed</h5>
+              <p class="card-description">
+                Unlocking the power of data structures in programming.
+              </p>
+              <div class="card-author">
+                <img
+                  src="/assets/images/author3.jpg"
+                  alt="Author"
+                  class="author-img"
+                />
+                <p class="author-name">By Alice Johnson</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="/books/book-4" class="card-link">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Machine Learning Basics</h5>
+              <p class="card-description">
+                An introduction to the fundamentals of machine learning.
+              </p>
+              <div class="card-author">
+                <img
+                  src="/assets/images/author4.jpg"
+                  alt="Author"
+                  class="author-img"
+                />
+                <p class="author-name">By Bob Brown</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="/books/book-5" class="card-link">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Programming Paradigms</h5>
+              <p class="card-description">
+                Understanding different programming paradigms and their
+                applications.
+              </p>
+              <div class="card-author">
+                <img
+                  src="/assets/images/author5.jpg"
+                  alt="Author"
+                  class="author-img"
+                />
+                <p class="author-name">By Charlie Davis</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

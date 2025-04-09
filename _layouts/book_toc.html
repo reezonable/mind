@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/custom.css" />
+  </head>
+  <body>
+    <header>
+      <h1>{{ page.title }}</h1>
+      <img src="{{ page.cover_image }}" alt="Cover Image" />
+      <p>{{ page.description }}</p>
+      <p>By {{ page.author }}</p>
+      <img src="{{ page.author_image }}" alt="Author Image" />
+      <p>Reading Time: {{ page.reading_time }} minutes</p>
+    </header>
+    <main>
+      {{ content }}
+      <ul>
+        {% for chapter in page.chapters %}
+        <li><a href="{{ chapter.url }}">{{ chapter.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </main>
+  </body>
+</html>

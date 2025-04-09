@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/custom.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Chapters</h3>
+          <ul class="list-group">
+            {% for chapter in page.chapters %}
+            <li class="list-group-item">
+              <a href="{{ chapter.url }}" {% if page.url == chapter.url %}class="active"{% endif %}>
+                {{ chapter.title }}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <h1>{{ page.title }}</h1>
+          <div class="chapter-content">{{ content }}</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
