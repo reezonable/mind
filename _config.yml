@@ -1,8 +1,8 @@
 # Site settings
 title: Tale
 description: "Minimal Jekyll theme"
-baseurl: ""
-url: ""
+baseurl: "/mind" # Replace "mind" with your repository name
+url: "https://reezonable.github.io" # Your GitHub Pages URL
 
 # Google Analytics
 google_analytics: UA—XXXXXXXX-X
