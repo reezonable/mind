@@ -15,7 +15,8 @@ layout: default
     <header class="top-banner">
       <div class="container">
         <div class="logo">
-          <img src="{{ "/assets/images/logo.png" | relative_url }}" alt="Logo"/>
+          <img src="{{ "/assets/images/logo.png" | relative_url }}" alt="Logo"
+          />
         </div>
         <nav class="site-nav">
           <ul>
@@ -29,8 +30,8 @@ layout: default
     </header>
     <div class="container main-content">
       <div class="card-columns">
-        <!-- Add your book and article cards here -->
-        <a href="/books/book-1" class="card-link">
+        <!-- Book 1 -->
+        <a href="{{ '/books/book-1' | relative_url }}" class="card-link">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">The Art of Coding</h5>
@@ -39,7 +40,7 @@ layout: default
               </p>
               <div class="card-author">
                 <img
-                  src="/assets/images/author1.jpg"
+                  src="{{ '/assets/images/author1.jpg' | relative_url }}"
                   alt="Author"
                   class="author-img"
                 />
@@ -48,7 +49,8 @@ layout: default
             </div>
           </div>
         </a>
-        <a href="/books/book-2" class="card-link">
+        <!-- Book 2 -->
+        <a href="{{ '/books/book-2' | relative_url }}" class="card-link">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Advanced Algorithms</h5>
@@ -57,7 +59,7 @@ layout: default
               </p>
               <div class="card-author">
                 <img
-                  src="/assets/images/author2.jpg"
+                  src="{{ '/assets/images/author2.jpg' | relative_url }}"
                   alt="Author"
                   class="author-img"
                 />
@@ -66,7 +68,8 @@ layout: default
             </div>
           </div>
         </a>
-        <a href="/books/book-3" class="card-link">
+        <!-- Book 3 -->
+        <a href="{{ '/books/book-3' | relative_url }}" class="card-link">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Data Structures Unleashed</h5>
@@ -75,7 +78,7 @@ layout: default
               </p>
               <div class="card-author">
                 <img
-                  src="/assets/images/author3.jpg"
+                  src="{{ '/assets/images/author3.jpg' | relative_url }}"
                   alt="Author"
                   class="author-img"
                 />
@@ -84,7 +87,8 @@ layout: default
             </div>
           </div>
         </a>
-        <a href="/books/book-4" class="card-link">
+        <!-- Book 4 -->
+        <a href="{{ '/books/book-4' | relative_url }}" class="card-link">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Machine Learning Basics</h5>
@@ -93,7 +97,7 @@ layout: default
               </p>
               <div class="card-author">
                 <img
-                  src="/assets/images/author4.jpg"
+                  src="{{ '/assets/images/author4.jpg' | relative_url }}"
                   alt="Author"
                   class="author-img"
                 />
@@ -102,7 +106,8 @@ layout: default
             </div>
           </div>
         </a>
-        <a href="/books/book-5" class="card-link">
+        <!-- Book 5 -->
+        <a href="{{ '/books/book-5' | relative_url }}" class="card-link">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Programming Paradigms</h5>
@@ -112,7 +117,7 @@ layout: default
               </p>
               <div class="card-author">
                 <img
-                  src="/assets/images/author5.jpg"
+                  src="{{ '/assets/images/author5.jpg' | relative_url }}"
                   alt="Author"
                   class="author-img"
                 />
